@@ -1,0 +1,30 @@
+.more__title {
+  font-family: var(--special-font);
+  font-weight: 400;
+  color: var(--special-dark);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more__info {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--special-dark-grey);
+  text-align: center;
+}
+
+.more__btn {
+  width: 279px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--special-btn);
+  font-family: var(--special-font);
+  color: var(--special-dark-grey);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}

@@ -1,0 +1,86 @@
+.additional-goods__wrapper {
+  margin: 0;
+  padding: 25px 20px 0 18px;
+}
+
+.additional-goods__title {
+  font-family: var(--special-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 36px;
+}
+
+.additional-goods__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-goods__item {
+  border-top: 1px solid var(--catalog-border);
+  padding-bottom: 31px;
+}
+
+.additional-goods__name {
+  font-family: var(--special-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--catalog-additional);
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding-top: 13px;
+}
+
+.additional-goods__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 13px 0 15px;
+}
+
+.additional-goods__description,
+.additional-goods__value {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: var(--special-dark-grey);
+}
+
+.additional-goods__button {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--basic-green);
+  font-family: var(--special-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.additional-goods__present {
+  background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../img/catalog_present.png");
+  width: 279px;
+  height: 289px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.additional-goods__present-info {
+  margin: 0;
+  padding-top: 187px;
+  color: var(--basic-white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}

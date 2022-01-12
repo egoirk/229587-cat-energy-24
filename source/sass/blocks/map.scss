@@ -1,0 +1,27 @@
+.map__description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  margin: 0;
+}
+
+.map__dealer {
+  font-family: var(--special-font);
+  color: var(--special-dark);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.map__address {
+  color: var(--special-dark-grey);
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding-right: 19px;
+}

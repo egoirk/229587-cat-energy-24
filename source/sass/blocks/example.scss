@@ -1,0 +1,45 @@
+.example {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__wrapper {
+  background-color: var(--grey-bg);
+  padding: 27px 20px 0 20px;
+  margin: 0;
+}
+
+.example__title {
+  margin: 0;
+  padding-bottom: 33px;
+  font-family: var(--special-font);
+  font-weight: 400;
+  color: var(--basic-black);
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__paragraph {
+  color: var(--special-dark-grey);
+  margin: 0;
+}
+
+.example__paragraph--price {
+  font-family: var(--special-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__changes {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.example__changes--range {
+  margin: 0;
+  padding: 0;
+}
