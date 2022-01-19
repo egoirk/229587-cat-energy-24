@@ -1,0 +1,44 @@
+.purpose__wrapper {
+  padding: 0 20px;
+}
+
+.purpose__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.purpose__item {
+  background-color: var(--basic-grey);
+  margin-bottom: 20px;
+}
+
+.purpose__title {
+  font-family: var(--special-font);
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  margin: 0;
+  padding: 30px 0 0 91px;
+}
+
+.purpose__paragraph {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-dark-grey);
+  margin: 0;
+  padding: 29px 33px 23px 20px;
+}
+
+.purpose__button {
+  display: block;
+  font-family: var(--special-font);
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 15px 0 18px 19px;
+}

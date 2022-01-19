@@ -1,0 +1,29 @@
+.page-footer__wrapper {
+  background-color: var(--basic-grey);
+}
+
+.page-footer__contacts {
+  margin: 0;
+  padding: 39px 96px 32px;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  padding: 28px 20px 0 19px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--special-dark-grey);
+}

@@ -1,0 +1,21 @@
+.program {
+  font-family: var(--special-font);
+  font-weight: 400;
+}
+
+.program__title {
+  margin: 0;
+  padding: 27px 41px 0 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program__paragraph {
+  margin: 0;
+  padding: 37px 74px 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
