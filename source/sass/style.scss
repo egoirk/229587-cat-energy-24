@@ -1,21 +1,36 @@
-//Global
-@import "global/normalize";
-@import "global/global.scss";
-@import "global/variables.scss";
-@import "global/fonts.scss";
+// Global
+@import "fonts.scss";
+@import "normalize";
+@import "variables.scss";
 
-//Blocks
-@import "blocks/visually-hidden.scss";
-@import "blocks/page.scss";
-@import "blocks/main-header.scss";
-@import "blocks/purpose.scss";
-@import "blocks/description.scss";
+// Blocks
+
+@import "blocks/cat-slider.scss";
 @import "blocks/example.scss";
-@import "blocks/map.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/button.scss";
+@import "blocks/description.scss";
+@import "blocks/program";
+@import "blocks/purpose.scss";
+@import "blocks/range-control";
+@import "blocks/results-list";
 @import "blocks/catalog.scss";
-@import "blocks/more.scss";
+@import "blocks/parameters-table.scss";
+@import "blocks/show-more.scss";
 @import "blocks/additional-goods.scss";
-@import "blocks/program.scss";
-@import "blocks/form.scss";
+@import "blocks/page-main-form.scss";
+@import "blocks/program-form.scss";
+@import "blocks/page-main.scss";
+@import "blocks/comment.scss";
+@import "blocks/button.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/socials.scss";
+@import "blocks/company-name.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/centering-container.scss";
+@import "blocks/green-line.scss";
+@import "blocks/page.scss";
+@import "blocks/header-bottom.scss";
+@import "blocks/header-wrapper.scss";

@@ -1,0 +1,127 @@
+.green-line {
+  position: relative;
+}
+
+.green-line__wrapper {
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+.green-line__header {
+  @include indent-reset;
+  display: inline-block;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0;
+  color: $headers-font;
+  padding: 25px 20px 32px 0;
+  white-space: nowrap;
+
+  background-color: $basic-white;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 65px 38px 80px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -40px;
+    padding: 78px 38px 80px 38px;
+  }
+}
+
+.green-line__header--comment {
+  padding: 25px 20px 37px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 44px 75px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 44px 75px 40px;
+  }
+}
+
+.green-line__header--additional {
+  padding: 22px 20px 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 44px 56px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 44px 56px 40px;
+  }
+}
+
+.green-line__header--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 77px 44px 75px 40px;
+
+    & br {
+      display: none;
+    }
+
+    & span {
+      display: inline-block;
+      padding-left: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 68px 44px 75px 40px;
+  }
+}
+
+.green-line__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "empty greeny";
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    bottom: 48%;
+  }
+
+  &::before {
+    content: "";
+    grid-area: empty;
+    height: 2px;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      background-color: $basic-green;
+    }
+  }
+
+  &::after {
+    content: "";
+    grid-area: greeny;
+    height: 2px;
+    background-color: $basic-green;
+  }
+}
+
+.green-line__line--contacts {
+  bottom: 62%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 47%;
+  }
+}
+
+.green-line__line--additional {
+  @media (min-width: $tablet-width) {
+    bottom: 43%;
+  }
+}

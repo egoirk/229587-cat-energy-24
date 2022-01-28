@@ -1,0 +1,33 @@
+$basic-white: rgb(255, 255, 255);
+$white-opacity: rgba(255, 255, 255, 0.3);
+$headers-font: rgb(0, 0, 0);
+$basic-font: rgba(68, 68, 68, 1);
+$basic-font-opacity: rgba(68, 68, 68, 0.3);
+$basic-green: rgba(104, 183, 56, 1);
+$basic-gray: rgba(242, 242, 242, 1);
+$green-opacity: rgba(104, 183, 56, 0.85);
+$border-gray: rgba(217, 217, 217, 1);
+$special-gray: rgba(235, 235, 235, 1);
+$special-green: rgba(94, 170, 47, 1);
+$range-background: rgba(220, 220, 220, 1);
+$center-border: rgba(230, 230, 230, 1);
+$slider-gradient: rgba(234, 234, 234, 1);
+$error: rgba(255, 130, 130, 1);
+$radio-border: rgba(205, 205, 205, 1);
+$radio-hover-border: rgba(186, 186, 186, 1);
+
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin centering {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

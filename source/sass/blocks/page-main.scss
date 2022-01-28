@@ -1,0 +1,123 @@
+.page-main__header {
+  position: relative;
+  min-height: 302px;
+  padding-top: 27px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-white;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    color: $headers-font;
+    min-height: 850px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    min-height: 696px;
+    top: 0;
+    color: $headers-font;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0;
+  }
+}
+
+.page-main__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  min-height: 302px;
+  margin: 0 auto;
+  background: url("../img/decorative/green-background.png"),
+    url("../img/decorative/licking_cat.jpg") 50% 50% no-repeat;
+  // background-size: contain;
+  background-color: darken($basic-green, 25%);
+  z-index: 0;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/decorative/green-background@2x.png"),
+      url("../img/decorative/licking-cat@2x.jpg") 50% 50% no-repeat;
+    background-size: 320px auto;
+    background-color: darken($basic-green, 25%);
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    grid-column: -1/-2;
+    background: url("../img/decorative/green-background.png"),
+      url("../img/decorative/licking_cat_desktop.jpg") right 50% no-repeat;
+    background-color: darken($basic-green, 25%);
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/decorative/green-background-desktop@2x.png"),
+        url("../img/decorative/licking-cat-desktop@2x.jpg") right 50% no-repeat;
+      background-size: contain;
+      background-color: darken($basic-green, 25%);
+    }
+  }
+}
+
+.page-main__description {
+  position: relative;
+  font-style: normal;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 1220px;
+    top: 223px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 80px;
+  }
+}
+
+.page-main__description h1 {
+  @include indent-reset;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
+}
+
+.page-main__description p {
+  @include indent-reset;
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 2;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
+}
