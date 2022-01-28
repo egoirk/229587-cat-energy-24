@@ -1,5 +1,7 @@
 {
+  "name": "cat-energy-24",
   "private": true,
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
@@ -26,15 +28,13 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",
     "not dead",
-    "not ie <= 11",
-    "not op_mini all",
-    "not < 0.25%"
+    "not ie <= 11"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -46,5 +46,6 @@
   ],
   "engines": {
     "node": "16.13.0"
-  }
+  },
+  "dependencies": {}
 }
