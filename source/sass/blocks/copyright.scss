@@ -1,0 +1,40 @@
+.copyright__link {
+  @include indent-reset;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  padding: 22px 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    padding: 9px 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: $basic-green;
+}
+
+.copyright__link:active .copyright__logo,
+.copyright__link:active .copyright__text {
+  opacity: 0.5;
+}
+
+.copyright__text {
+  @include indent-reset;
+  display: block;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  text-decoration: none;
+  color: $basic-font;
+}

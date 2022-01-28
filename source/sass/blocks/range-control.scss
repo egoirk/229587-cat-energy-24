@@ -1,0 +1,150 @@
+.range-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  padding: 6px 0 0 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 572px;
+    transform: translateY(-185px);
+    padding: 8px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(54px, -187px);
+  }
+}
+
+.range-control__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $headers-font;
+  border: none;
+  cursor: pointer;
+  padding: 2px 0;
+  border-bottom: 1px dotted $border-gray;
+  background-color: transparent;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
+  &:hover {
+    border-bottom: 1px solid $border-gray;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.range-control__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-gray;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.range-control__tougle {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.range-control__tougle--disabled {
+  background-color: transparent;
+}
+
+.range-control__input {
+  appearance: none;
+  position: relative;
+  width: 428px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $range-background;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+// range input for mozilla
+
+.range-control__input::-moz-range-thumb {
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  border: 12px solid $basic-white;
+  box-shadow: 0 0 0 1px $range-background, 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 1px $range-background, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px $basic-green, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.range-control__input::-webkit-slider-thumb {
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  border: 12px solid $basic-white;
+  box-shadow: 0 0 0 1px $range-background, 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $range-background, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px $basic-green, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
+  }
+}

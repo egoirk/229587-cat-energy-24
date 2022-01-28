@@ -1,0 +1,48 @@
+.header-wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-rows: min-content min-content;
+  }
+}
+
+.header-wrapper__bg {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+  }
+}
+
+.header-wrapper__bg-right {
+  @media (min-width: $desktop-width) {
+    min-width: 720px;
+    min-height: 694px;
+
+    background: url("../img/decorative/green-background.png"),
+      url("../img/decorative/licking_cat_desktop.jpg") center right no-repeat;
+    background-color: darken($basic-green, 27%);
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/decorative/green-background-desktop@2x.png"),
+        url("../img/decorative/licking-cat-desktop@2x.jpg") center right
+          no-repeat;
+      background-size: 720px auto;
+      background-color: darken($basic-green, 27%);
+    }
+  }
+}
+
+.header-wrapper__page-header {
+  @media (min-width: $desktop-width) {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+  }
+}
+
+.header-wrapper__header-bottom {
+  @media (min-width: $desktop-width) {
+    grid-row: -2/-1;
+    grid-column: 1/-1;
+  }
+}

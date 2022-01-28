@@ -1,0 +1,79 @@
+.page-header {
+  position: relative;
+  // z-index: 4;
+}
+
+.page-header__container {
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 709px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    width: 1220px;
+    padding-top: 50px;
+  }
+}
+
+.page-header__logo-wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 220px;
+    margin: 0;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  justify-content: flex-start;
+  padding: 23px 0 19px 90px;
+  background: url("../img/decorative/logo_mobile.svg") left bottom 16px
+    no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background: url("../img/decorative/logo_tablet.svg") left center no-repeat;
+    padding: 33px 0 64px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    padding: 0;
+    background: url("../img/decorative/logo_desktop.svg") left center no-repeat;
+  }
+}
+
+.page-header__logo img {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}

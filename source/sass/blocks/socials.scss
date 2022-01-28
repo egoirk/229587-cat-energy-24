@@ -1,0 +1,65 @@
+.socials {
+  width: 280px;
+  padding: 16px 0 12px 0;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.socials__wrapper {
+  width: 130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
+  & svg {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &:hover svg {
+    stroke: $basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.5;
+  }
+}
+
+.socials__link--fb {
+  fill: none;
+  stroke: $basic-font;
+
+  & svg {
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
+  }
+}
+
+.socials__link.socials__link--fb {
+  &:hover {
+    fill: none;
+    stroke: $basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.5;
+  }
+}

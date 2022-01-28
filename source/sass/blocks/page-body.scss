@@ -1,0 +1,10 @@
+.page-body:not(svg) {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: $basic-white;
+  color: $basic-font;
+  min-width: 320px;
+}

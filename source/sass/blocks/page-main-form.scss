@@ -1,0 +1,49 @@
+.page-main-form__header {
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 66px;
+  }
+}
+
+.page-main-form__header h1 {
+  @include indent-reset;
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 37px;
+  color: $headers-font;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+    padding-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    margin-bottom: 58px;
+  }
+}
+
+.page-main-form__header p {
+  @include indent-reset;
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: $headers-font;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

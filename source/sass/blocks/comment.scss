@@ -1,0 +1,22 @@
+.comment__textarea {
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  resize: none;
+  padding: 10px 10px 10px 15px;
+  border: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding: 14px 19px 14px 19px;
+  }
+
+  &::placeholder {
+    color: $basic-font;
+  }
+
+  &:focus-visible {
+    border: 1px solid $basic-font;
+  }
+}

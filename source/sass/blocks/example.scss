@@ -1,45 +1,97 @@
 .example {
-  font-size: 14px;
-  line-height: 18px;
+  background-color: $slider-gradient;
+  position: relative;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(
+      to right,
+      $slider-gradient 70%,
+      $basic-gray 70%
+    );
+    padding: 0;
+  }
 }
 
 .example__wrapper {
-  background-color: var(--grey-bg);
-  padding: 27px 20px 0 20px;
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
-.example__title {
-  margin: 0;
-  padding-bottom: 33px;
-  font-family: var(--special-font);
-  font-weight: 400;
-  color: var(--basic-black);
+.example__description {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 246px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: description;
+    margin-bottom: 0;
+  }
+}
+
+.example__header {
+  @include indent-reset;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
-  line-height: 40px;
-}
-
-.example__paragraph {
-  color: var(--special-dark-grey);
-  margin: 0;
-}
-
-.example__paragraph--price {
-  font-family: var(--special-font);
+  font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: $headers-font;
+  padding: 27px 0 33px 0;
+  grid-area: header;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 43px 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -135px;
+    padding: 0;
+  }
 }
 
-.example__changes {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.example__text {
+  @include indent-reset;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+    width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 72px 0 69px 0;
+    width: 436px;
+  }
 }
 
-.example__changes--range {
-  margin: 0;
-  padding: 0;
+.example__results {
+  @include indent-reset;
+  list-style: none;
+}
+
+.example__slider {
+  position: relative;
+  grid-area: slider;
+  z-index: 0;
 }
