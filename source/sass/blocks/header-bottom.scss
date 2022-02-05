@@ -1,11 +1,11 @@
-.header-bottom {
+.caption-bottom {
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
   }
 }
 
-.header-bottom__wrapper {
+.caption-bottom__wrapper {
   padding-bottom: 164px;
   background: url("../img/decorative/green-background.png"),
     url("../img/decorative/licking_cat.jpg") 50% 50% no-repeat;
@@ -29,7 +29,7 @@
   }
 }
 
-.header-bottom__description {
+.caption-bottom__description {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   color: $basic-white;
@@ -51,7 +51,7 @@
   }
 }
 
-.header-bottom__description h1 {
+.caption-bottom__description h1 {
   @include indent-reset;
   display: block;
   font-size: 36px;
@@ -71,7 +71,7 @@
   }
 }
 
-.header-bottom__description p {
+.caption-bottom__description p {
   @include indent-reset;
   font-size: 14px;
   line-height: 14px;
@@ -87,7 +87,7 @@
   }
 }
 
-.header-bottom__image-container {
+.caption-bottom__image-container {
   position: relative;
   width: 280px;
   margin: 0 auto;
@@ -107,14 +107,14 @@
   }
 }
 
-.header-bottom__image-wrapper {
+.caption-bottom__image-wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
     order: 1;
   }
 }
 
-.header-bottom__img {
+.caption-bottom__img {
   width: 280px;
   margin-top: -136px;
 
@@ -132,7 +132,7 @@
   }
 }
 
-.header-bottom__button {
+.caption-bottom__button {
   display: block;
 
   @media (min-width: $tablet-width) {

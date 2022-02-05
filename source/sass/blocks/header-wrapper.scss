@@ -2,6 +2,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: min-content min-content;
+    margin-bottom: 70px;
   }
 }
 
@@ -11,6 +12,8 @@
     grid-template-columns: 1fr 1fr;
     grid-row: 1/-1;
     grid-column: 1/-1;
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -40,7 +43,7 @@
   }
 }
 
-.header-wrapper__header-bottom {
+.caption-wrapper {
   @media (min-width: $desktop-width) {
     grid-row: -2/-1;
     grid-column: 1/-1;
